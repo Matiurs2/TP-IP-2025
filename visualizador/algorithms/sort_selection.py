@@ -17,6 +17,7 @@ def init(vals):
     fase = "buscar"
 
 def step():
+    global items, n, i, j, min_idx, fase
     if fase=="buscar":
         if j<n:
             if items[j]<items[min_idx]:
@@ -36,4 +37,4 @@ def step():
             if i== n-1:
                 return {"done":True}
             else:
-                return {"a":min_idx, "b":j-1,"swap":False,"done":False }
+                return {"a":min_idx, "b":j-1,"swap":False,"done":False}
