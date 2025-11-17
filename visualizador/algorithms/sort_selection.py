@@ -36,15 +36,4 @@ def step():
             if i== n-1:
                 return {"done":True}
             else:
-                return {"a":min_idx, "b":j-1,"swap":False,"done":False}   
-
-    
-    # TODO:
-    # - Fase "buscar": comparar j con min_idx, actualizar min_idx, avanzar j.
-    #   Devolver {"a": min_idx, "b": j_actual, "swap": False, "done": False}.
-    #   Al terminar el barrido, pasar a fase "swap".
-    # - Fase "swap": si min_idx != i, hacer ese único swap y devolverlo.
-    #   Luego avanzar i, reiniciar j=i+1 y min_idx=i, volver a "buscar".
-    #
-    # Cuando i llegue al final, devolvé {"done": True}.
-    return {"done": True}
+                return {"a":min_idx, "b":j-1,"swap":False,"done":False }
